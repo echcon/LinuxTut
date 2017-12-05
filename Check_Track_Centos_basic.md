@@ -30,5 +30,7 @@ Bằng lệnh “lscpu” bạn có thể biết được các thông số cơ b
 
 # Kiểm tra thông số của nhiều đơn vị phần cứng
 Cài đặt:  yum install -y lshw 
+
 Chạy lệnh 
+
 \# lshw -short
