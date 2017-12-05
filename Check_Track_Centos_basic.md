@@ -28,9 +28,8 @@ NUMA node0 CPU(s):     0
 
 Bằng lệnh “lscpu” bạn có thể biết được các thông số cơ bản của CPU như Architecture,CPU(s),Thread(s) per core,CPU MHz,…
 
-# Kiểm tra thông số của nhiều đơn vị phần cứng
+### Kiểm tra thông số của nhiều đơn vị phần cứng
 Cài đặt:  yum install -y lshw 
 
-Chạy lệnh 
-
-\# lshw -short
+Chạy lệnh =>
+*# lshw -short*
