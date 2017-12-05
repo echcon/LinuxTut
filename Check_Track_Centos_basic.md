@@ -21,3 +21,6 @@ Chạy lệnh: *dd if=/dev/zero of=test_chithongn bs=64k count=16k conv=fdatasyn
 Cài đặt: *# yum install -y ioping;*
 
 Chạy lệnh: *# ioping . -c 20;*
+
+Cần quan tâm các thông số sau:
+<b>iops</b> : có nghĩa là trong vòng 1 giây ổ cứng có thể thực hiện 887 lần truy vấn (đọc & ghi), con số này càng cao càng tốt
