@@ -29,4 +29,6 @@ Chạy lệnh: *# ioping . -c 20;*
 ### Kiểm tra hiệu năng toàn diện Server bằng sysbench 
 
 **Cài đặt Package:** # yum install -y sysbench
-Chạy lệnh: 
+Chạy lệnh: *#sysbench --test=fileio --file-total-size=5G prepare*
+
+*# sysbench --test=fileio --file-total-size=5G --file-test-mode=rndrw --i*
