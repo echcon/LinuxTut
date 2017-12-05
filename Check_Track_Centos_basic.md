@@ -22,6 +22,7 @@ Cài đặt: *# yum install -y ioping;*
 
 Chạy lệnh: *# ioping . -c 20;*
 
-Cần quan tâm các thông số sau:
-1. <b>iops</b> : có nghĩa là trong vòng 1 giây ổ cứng có thể thực hiện 887 lần truy vấn (đọc & ghi), con số này càng cao càng tốt
-2. min/avg/max/mdev : tức là độ trễ trung bình (hoặc khoảng thời gian cần thiết để xử lý 1 truy vấn đọc hoặc ghi) của ổ cứng, con số này càng thấp càng tốt.
+<ul>
+<li><b>iops</b> : có nghĩa là trong vòng 1 giây ổ cứng có thể thực hiện 887 lần truy vấn (đọc & ghi), con số này càng cao càng tốt</li>
+<li>min/avg/max/mdev : tức là độ trễ trung bình (hoặc khoảng thời gian cần thiết để xử lý 1 truy vấn đọc hoặc ghi) của ổ cứng, con số này càng thấp càng tốt.</li>
+</ul>
