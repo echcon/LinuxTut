@@ -26,5 +26,4 @@ L1i cache:             32K
 L2 cache:              4096K
 NUMA node0 CPU(s):     0
 
-
 Bằng lệnh “lscpu” bạn có thể biết được các thông số cơ bản của CPU như Architecture,CPU(s),Thread(s) per core,CPU MHz,…
