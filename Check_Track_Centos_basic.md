@@ -18,5 +18,5 @@ Chạy lệnh: *# lsblk*
 Chạy lệnh: *dd if=/dev/zero of=test_chithongn bs=64k count=16k conv=fdatasync*
 *test_chithongn là file ghi nhận log được trả về theo lệnh*
 ### Kiểm tra tốc độ truy xuất của ổ cứng lưu trữ bằng lệnh “ioping”
-Cài đặt: *# yum install -y ioping;*
+Cài đặt: *# yum install -y ioping;*.
 Chạy lệnh: *# ioping . -c 20;*
