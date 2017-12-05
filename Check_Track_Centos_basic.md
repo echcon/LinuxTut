@@ -1,5 +1,5 @@
 # Kiểm tra đánh giá hiệu năng của CENTOS
-# Kiểm tra thông số CPU
+### Kiểm tra thông số CPU
 Bạn dùng lệnh “lscpu” để kiểm tra thông tin CPU
 
 [root@chithongn ~]# lscpu
