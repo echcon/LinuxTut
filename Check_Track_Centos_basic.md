@@ -29,3 +29,4 @@ Chạy lệnh: *# ioping . -c 20;*
 ### Kiểm tra hiệu năng toàn diện Server bằng sysbench 
 
 **Cài đặt Package:** # yum install -y sysbench
+Chạy lệnh: 
