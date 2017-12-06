@@ -50,13 +50,12 @@ Chạy lệnh: *# ioping . -c 20;*
 ### Kiểm tra hiệu năng toàn diện Server bằng sysbench 
 
 **Cài đặt Package:** # yum install -y sysbench
-Chạy lệnh: *#sysbench --test=fileio --file-total-size=5G prepare*<br/>
+Chạy lệnh: <code>*#sysbench --test=fileio --file-total-size=5G prepare*</code>
 Thực hiện test
-*# sysbench --test=fileio --file-total-size=5G --file-test-mode=rndrw --i*
+<code>*# sysbench --test=fileio --file-total-size=5G --file-test-mode=rndrw --i*</code>
 Xóa file sau khi test<br/>
-*# sysbench --test=fileio --file-total-size=5G cleanup* <br/>
+<code>*# sysbench --test=fileio --file-total-size=5G cleanup*</code>
 
-----
 ## Kiểm tra hiệu năng MySQL
 * Cần tạo 1 database để test (ở đây mình tạo database có tên là “pep_test”), sau đó bạn chạy lệnh sau :<br/>
 Chuẩn bị data để test:<br/>
