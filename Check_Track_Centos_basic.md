@@ -3,7 +3,7 @@
 Bạn dùng lệnh “lscpu” để kiểm tra thông tin CPU
 
 *[root@chithongn ~]# lscpu*
-Architecture:          x86_64<br/>
+<code>Architecture:          x86_64<br/>
 CPU op-mode(s):        32-bit, 64-bit<br/>
 Byte Order:            Little Endian<br/>
 CPU(s):                1<br/>
@@ -24,7 +24,7 @@ Virtualization type:   full<br/>
 L1d cache:             32K<br/>
 L1i cache:             32K<br/>
 L2 cache:              4096K<br/>
-NUMA node0 CPU(s):     0<br/>
+NUMA node0 CPU(s):     0<br/></code>
 Bằng lệnh “lscpu” bạn có thể biết được các thông số cơ bản của CPU như Architecture,CPU(s),Thread(s) per core,CPU MHz,…
 
 ### Kiểm tra thông số của nhiều đơn vị phần cứng
