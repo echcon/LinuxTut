@@ -3,11 +3,11 @@
 Bạn dùng lệnh “lscpu” để kiểm tra thông tin CPU
 
 *[root@chithongn ~]# lscpu*
-<code>Architecture:          x86_64<br/>
-CPU op-mode(s):        32-bit, 64-bit<br/>
-Byte Order:            Little Endian<br/>
-CPU(s):                1<br/>
-On-line CPU(s) list:   0<br/>
+<code>Architecture:          x86_64  
+CPU op-mode(s):        32-bit, 64-bit  
+Byte Order:            Little Endian  
+CPU(s):                1  
+On-line CPU(s) list:   0  
 Thread(s) per core:    1<br/>
 Core(s) per socket:    1<br/>
 Socket(s):             1<br/>
