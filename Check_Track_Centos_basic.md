@@ -60,3 +60,7 @@ Xóa file sau khi test<br/>
 * Cần tạo 1 database để test (ở đây mình tạo database có tên là “pep_test”), sau đó bạn chạy lệnh sau :<br/>
 Chuẩn bị data để test:<br/>
     <code># sysbench --test=oltp --oltp-table-size=1000000 --db-driver=mysql --mys</code>
+Thực hiện test:<br/>
+    <code>#sysbench --test=oltp --oltp-table-size=1000000 --db-driver=mysql --mys</code>
+Dọn sạch dữ liệu test<br/>
+    <code># sysbench --test=oltp --db-driver=mysql --mysql-db=pep_test --mysql-user</code>
