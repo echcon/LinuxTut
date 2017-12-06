@@ -3,28 +3,28 @@
 Bạn dùng lệnh “lscpu” để kiểm tra thông tin CPU
 
 *[root@chithongn ~]# lscpu*
-Architecture:          x86_64
-CPU op-mode(s):        32-bit, 64-bit
-Byte Order:            Little Endian
-CPU(s):                1
-On-line CPU(s) list:   0
-Thread(s) per core:    1
-Core(s) per socket:    1
-Socket(s):             1
-NUMA node(s):          1
-Vendor ID:             GenuineIntel
-CPU family:            6
-Model:                 44
-Model name:            Westmere E56xx/L56xx/X56xx (Nehalem-C)
-Stepping:              1
-CPU MHz:               3392.144
-BogoMIPS:              6784.28
-Hypervisor vendor:     KVM
-Virtualization type:   full
-L1d cache:             32K
-L1i cache:             32K
-L2 cache:              4096K
-NUMA node0 CPU(s):     0
+Architecture:          x86_64<br/>
+CPU op-mode(s):        32-bit, 64-bit<br/>
+Byte Order:            Little Endian<br/>
+CPU(s):                1<br/>
+On-line CPU(s) list:   0<br/>
+Thread(s) per core:    1<br/>
+Core(s) per socket:    1<br/>
+Socket(s):             1<br/>
+NUMA node(s):          1<br/>
+Vendor ID:             GenuineIntel<br/>
+CPU family:            6<br/>
+Model:                 44<br/>
+Model name:            Westmere E56xx/L56xx/X56xx (Nehalem-C)<br/>
+Stepping:              1<br/>
+CPU MHz:               3392.144<br/>
+BogoMIPS:              6784.28<br/>
+Hypervisor vendor:     KVM<br/>
+Virtualization type:   full<br/>
+L1d cache:             32K<br/>
+L1i cache:             32K<br/>
+L2 cache:              4096K<br/>
+NUMA node0 CPU(s):     0<br/>
 Bằng lệnh “lscpu” bạn có thể biết được các thông số cơ bản của CPU như Architecture,CPU(s),Thread(s) per core,CPU MHz,…
 
 ### Kiểm tra thông số của nhiều đơn vị phần cứng
