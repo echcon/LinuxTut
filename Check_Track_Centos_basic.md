@@ -54,5 +54,5 @@ Chạy lệnh: *#sysbench --test=fileio --file-total-size=5G prepare*<br/>
 Thực hiện test
 *# sysbench --test=fileio --file-total-size=5G --file-test-mode=rndrw --i*
 Xóa file sau khi test<br/>
-*# sysbench --test=fileio --file-total-size=5G cleanup*
+*# sysbench --test=fileio --file-total-size=5G cleanup*<br/>
 **Kiểm tra hiệu năng MySQL**
