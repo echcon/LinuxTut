@@ -54,9 +54,10 @@ Chạy lệnh: *#sysbench --test=fileio --file-total-size=5G prepare*<br/>
 Thực hiện test
 *# sysbench --test=fileio --file-total-size=5G --file-test-mode=rndrw --i*
 Xóa file sau khi test<br/>
-*# sysbench --test=fileio --file-total-size=5G cleanup*<br/>
+*# sysbench --test=fileio --file-total-size=5G cleanup* <br/>
+
 ----
 ## Kiểm tra hiệu năng MySQL
 * Cần tạo 1 database để test (ở đây mình tạo database có tên là “pep_test”), sau đó bạn chạy lệnh sau :<br/>
 Chuẩn bị data để test:<br/>
-    # sysbench --test=oltp --oltp-table-size=1000000 --db-driver=mysql --mys
+    <code># sysbench --test=oltp --oltp-table-size=1000000 --db-driver=mysql --mys</code>
