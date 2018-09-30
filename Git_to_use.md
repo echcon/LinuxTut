@@ -1,72 +1,42 @@
 ### Công việc
-
-<code>git checkout master</code>
-
-<code>git fetch</code>
-
-> git merge origin/master
-
-> git checkout -b feedback_form
-
-> git add feedback.html
-
-> git commit -m "Add customer feedback form"
-
-> git fetch
-
-> git push-u origin feedback_form
+<code> git checkout master</code>
+<code> git fetch</code>
+<code> git merge origin/master</code>
+<code> git checkout -b feedback_form</code>
+<code> git add feedback.html</code>
+<code> git commit -m "Add customer feedback form"</code>
+<code> git fetch</code>
+<code> git push-u origin feedback_form</code>
  
 ### Coworker
-
-> git checkout master
-
-> git fetch
-
-> git merge origin/master
-
-> git checkout -b feedback_form origin/feedback_form
-
-> git log
-
-> git show 8284abdq9
-
-> git commit -am "Add tour selector to feedback form"
-
-> git fetch
-
-> git push
+<code> git checkout master</code>
+<code> git fetch</code>
+<code> git merge origin/master</code>
+<code> git checkout -b feedback_form origin/feedback_form</code>
+<code> git log</code>
+<code> git show 8284abdq9</code>
+<code> git commit -am "Add tour selector to feedback form"</code>
+<code> git fetch</code>
+<code> git push</code>
  
-### My work
-> git fetch
-
-> git log -p feedback_form..origin/feedback_form
-
-> git merge origin/feedback_form
-
-> git checkout master
-
-> git fetch
-
-> git merge origin/master
-
-> git merge feedback_form
-
-> git push
+### Kiểm tra branch
+<code> git fetch</code>
+<code> git log -p feedback_form..origin/feedback_form</code>
+<code> git merge origin/feedback_form</code>
+<code> git checkout master</code>
+<code> git fetch</code>
+<code> git merge origin/master</code>
+<code> git merge feedback_form</code>
+<code> git push</code>
 
 ### Thao tác khi source thay đổi
-> ##### đưa các file bị thay đổi vào staging index
-
-> git add .
+> ***đưa các file bị thay đổi vào staging index***
+<code> git add .</code>
+<code> ##### lưu vào repository kèm theo thông tin ghi chú</code>
+<code> git commit -m "Initial commit"</code>
+<code>  ***add và commit cùng lúc*** </code>
+<code> git commit -am "Initial commit"</code>
  
-> ##### lưu vào repository kèm theo thông tin ghi chú
+***thay đổi nội dung ghi chú hoặc ghi đè lên commit gần nhất***
 
-> git commit -m "Initial commit"
- 
-> ##### add và commit cùng lúc
-
-> git commit -am "Initial commit"
- 
-> ##### thay đổi nội dung ghi chú hoặc ghi đè lên commit
-> ##### gần nhất
-
-> git commit --ammend "Ammend the commit"
+<code> git commit --ammend "Ammend the commit"</code>
