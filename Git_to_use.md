@@ -1,6 +1,8 @@
 ### Công việc
 <code>* git checkout master*</code>
+
 <code>* git fetch*</code>
+
 <code>* git merge origin/master*</code>
 <code> git checkout -b feedback_form</code>
 <code> git add feedback.html</code>
