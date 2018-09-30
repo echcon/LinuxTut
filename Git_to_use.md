@@ -82,3 +82,13 @@
  
 #### kết quả thu được
 <code> testing(new_branch) ></code>
+
+### Một số cách thiết lập alias (shortcut) cho những command hay sử dụng
+<code>git config --global alias.st status<br/>
+git config --global alias.co checkout<br/>
+git config --global alias.ci commit<br/>
+git config --global alias.br branch<br/>
+git config --global alias.df diff<br/>
+git config --global alias.dfs "diff --staged"<br/>
+git config --global alias.logg "log --graph --oneline --decorate --abbrev-commit --all"</code>
+
