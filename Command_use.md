@@ -1,6 +1,6 @@
 ### SSH protocol
-  scp Test.tgz ubuntu@192.168.1.1:~/thongnc/ # upload file to server
-  scp thongnc@192.168.1.1:~/thongnc/Test.tgz ~/Download/ # download file from server
+  *** scp Test.tgz ubuntu@192.168.1.1:~/thongnc/ # upload file to server
+  *** scp thongnc@192.168.1.1:~/thongnc/Test.tgz ~/Download/ # download file from server
 
 ### Quản lý các tiến trình
 Theo dõi/monitor sự hoạt động của các tiến trình là cần thiết khi ứng dụng đang hoạt động
