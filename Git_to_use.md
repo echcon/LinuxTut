@@ -1,6 +1,6 @@
 ### Thiết lập thông số lần đầu làm việc
-<code> git config --global user.name "chithong"</code
-git config --global user.email "chithongn@gemail.com"
+<code> git config --global user.name "chithong"</code><br/>
+<code> git config --global user.email "chithongn@gemail.com"</code>
  
 ### Công việc
 <code> git checkout master</code><br/>
