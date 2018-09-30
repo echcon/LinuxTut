@@ -1,8 +1,8 @@
 ### Công việc
 
-> git checkout master
+<code>git checkout master</code>
 
-> git fetch
+<code>git fetch</code>
 
 > git merge origin/master
 
