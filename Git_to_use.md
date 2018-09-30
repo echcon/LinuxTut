@@ -40,3 +40,19 @@
 ***thay đổi nội dung ghi chú hoặc ghi đè lên commit gần nhất***
 
 <code> git commit --ammend "Ammend the commit"</code>
+
+### Branch
+#### liệt kê danh sách các branch
+<code>git branch</code>
+ 
+#### xem con trỏ HEAD đang ở branch nào
+<code>cat .git/HEAD</code>
+ 
+#### xem có bao nhiêu branch trong head
+<code>cat .git/refs/heads/</code>
+ 
+#### head đang trỏ đến commit nào
+<code>cat .git/refs/heads/master</code>
+ 
+# tạo lập branch mới
+git branch new_branch
