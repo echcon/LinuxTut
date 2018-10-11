@@ -61,7 +61,6 @@
 ### tạo lập branch mới
 > <code> git branch new_branch</code>
 #### vừa tạo vừa chuyển qua new_branch cùng lúc
-![ahihi](https://ss-images.catscdn.vn/w600/2016/04/27/454099/soaicangoaiquoc5-290x290.jpg)
 > <code> git checkout -b new_branch</code>
 
 ### Chuyển bbranch nhưng bị vướng uncommit
