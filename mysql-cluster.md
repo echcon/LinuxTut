@@ -1,5 +1,5 @@
 ## MySQL Cluster
-I. Chuẩn bị:
+I. **Chuẩn bị:**
 * MySQL Cluster built base on 4+ server:
   * 01 server is responsible for managing cluster system: Management Node
   * 01 server is responsible for receiving queries to the cluster system: SQL Node
@@ -11,7 +11,7 @@ I. Chuẩn bị:
 * Download MySQL cluster for Linux
 * After download please move file to a directory. Ex: /var/download
 
-II. Install package on server node
+II. **Install package on server node**
   1. SQL node:
      - You must create group & account on server: Group mysql, User mysql
      ```
@@ -42,7 +42,7 @@ II. Install package on server node
      ```
   2. Data node
      - Go to downloaded file: extract it & copy ndbd, ndbmtd to /usr/local/bin
-      ```#> cd /var/tmp
+      ```#> cd /var/download
       #> tar -zxvf mysql-cluster-gpl-7.6.12-linux-glibc2.12-x86_64.tar.gz
       #> cd mysql-cluster-gpl-7.6.12-linux-glibc2.12-x86_64
       #> cp bin/ndbd /usr/local/bin/ndbd
@@ -53,3 +53,25 @@ II. Install package on server node
       #> chmod +x /usr/local/bin/ndbd /usr/local/bin/ndbmtd
       ```
   3. Management node
+     - Go to downloaded file: extract it & copy ndb_mgmd, ndb_mgm to /usr/local/bin
+      ```#> cd /var/download
+      #> tar -zxvf mysql-cluster-gpl-7.6.12-linux-glibc2.12-x86_64.tar.gz
+      #> cd mysql-cluster-gpl-7.6.12-linux-glibc2.12-x86_64
+      #> cp bin/ndb_mgm /usr/local/bin/ndb_mgm
+      #> cp bin/ndb_mgmd /usr/local/bin/ndb_mgmd
+      ```
+      - Point to directory copied file. Allow execute permission the file:
+      ```
+      #> chmod +x /usr/local/bin/ndb_mgm /usr/local/bin/ndb_mgmd
+      ```
+ III. **MySQL Cluster config:**
+   1. Create config file of Data nodes & SQL node
+   2. Create config file of Management node
+   
+   
+ IV. **MySQL Cluster START**
+   1. Start MySQL Cluster on Management node
+   2. Start Data node
+   3. Start SQL node
+   4. Monitor MySQL Cluster after start on nodes
+ 
