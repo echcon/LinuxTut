@@ -65,9 +65,60 @@ II. **Install package on server node**
       #> chmod +x /usr/local/bin/ndb_mgm /usr/local/bin/ndb_mgmd
       ```
  III. **MySQL Cluster config:**
+   -  On data node / sql node need 01 file my.cnf to include management node and parameter enable NDBCluster on host
    1. Create config file of Data nodes & SQL node
+      ```
+      #> vi /etc/my.cnf
+         [mysqld]
+         # Options for mysqld process:
+         ndbcluster # run NDB storage engine
+         [mysql_cluster]
+         # Options for MySQL Cluster processes:
+         ndb-connectstring=172.17.0.10:1186 # location of management server
+      ```
    2. Create config file of Management node
-   
+      - File config on Management node include total number server data node, total memory, storage volumn and index per data node, address data node and sql node, data path on data node
+      - Create a directory include config file
+      shell> mkdir /var/lib/mysql-cluster
+      shell> cd /var/lib/mysql-cluster
+      shell> vi config.ini
+      - At management node, config file:
+      ```
+      [ndbd default]
+      # Options affecting ndbd processes on all data nodes:
+      NoOfReplicas=2 # Number of replicas
+      DataMemory=1024M # How much memory to allocate for data storage
+      IndexMemory=128M # How much memory to allocate for index storage
+      # For DataMemory and IndexMemory, we have used the
+      # default values. Since the "world" database takes up
+      # only about 500KB, this should be more than enough for
+      # this example Cluster setup.
+      [tcp default]
+      # TCP/IP options:
+      portnumber=2288 # This the default; however, you can use any
+      # port that is free for all the hosts in the cluster
+      # Note: It is recommended that you do not specify the port
+      # number at all and simply allow the default value to be used instead
+      [ndb_mgmd]
+      # Management process options:
+      hostname=172.17.0.10 # Hostname or IP address of MGM node
+      datadir=/var/lib/mysql-cluster # Directory for MGM node log files
+      [ndbd]
+      # Options for data node "A":
+      # (one [ndbd] section per data node)
+      hostname=172.17.0.40 # Hostname or IP address
+      datadir=/usr/local/mysql/data # Directory for this data node's data files
+      [ndbd]
+      # Options for data node "B":
+      hostname=172.17.0.41 # Hostname or IP address
+      datadir=/usr/local/mysql/data # Directory for this data node's data files
+      [mysqld]
+      # SQL node options:
+      hostname=172.17.0.30 # Hostname or IP address
+      # (additional mysqld connections can be
+      # specified for this node for various
+      # purposes such as running ndb_restore)
+      ```
    
  IV. **MySQL Cluster START**
    * System MySQL Cluster is starting in the order:
