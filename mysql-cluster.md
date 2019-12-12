@@ -70,12 +70,27 @@ II. **Install package on server node**
    
    
  IV. **MySQL Cluster START**
-     ##### Hệ thống MySQL Cluster được khởi động theo trình tự sau:
-        ###### Đầu tiên ta khởi động dịch vụ MySQL Cluster trên management node
-        ###### Tiếp theo, ta khởi động dịch vụ MySQL Cluster trên các data node
-        ######  Cuối cùng, ta khởi động dịch vụ MySQL Cluster trên các sql node
+   * System MySQL Cluster is starting in the order:
+     - Start MySQL Cluster on management node
+     - Next, start MySQL Cluster on data node
+     - Then, start MySQL Cluster on sql node
    1. Start MySQL Cluster on Management node
+      ```
+      #> ndb_mgmd -f /var/lib/mysql-cluster/config.ini
+      ```
    2. Start Data node
+      ```
+      #> ndbd
+      ```
    3. Start SQL node
+      ```
+      #> /etc/init.d/mysql.server start
+      ```
    4. Monitor MySQL Cluster after start on nodes
- 
+      When MySQL nodes is started: system is worked. You can check Mângêmnt node by command ndb_mgm.
+      ```
+      #> ndb_mgm
+      ndb_mgm> show
+      ```
+      The list all nodes will be show the screen.
+      
