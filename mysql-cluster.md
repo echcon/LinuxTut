@@ -70,6 +70,10 @@ II. **Install package on server node**
    
    
  IV. **MySQL Cluster START**
+     ##### Hệ thống MySQL Cluster được khởi động theo trình tự sau:
+        ###### Đầu tiên ta khởi động dịch vụ MySQL Cluster trên management node
+        ###### Tiếp theo, ta khởi động dịch vụ MySQL Cluster trên các data node
+        ######  Cuối cùng, ta khởi động dịch vụ MySQL Cluster trên các sql node
    1. Start MySQL Cluster on Management node
    2. Start Data node
    3. Start SQL node
