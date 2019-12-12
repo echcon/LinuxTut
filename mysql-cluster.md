@@ -23,9 +23,22 @@ II. Install package on server node
      #> tar -C /usr/local -xzvf mysql-cluster-gpl-7.6.12-linux-glibc2.12-x86_64.tar.gz
      #> ln -s mysql-cluster-gpl-7.6.12-linux-glibc2.12-x86_64 
      ```
-     * please note some OS version 16.04 have not libaio library: please check & install it to initial database
+     - please note some OS version 16.04 have not libaio library: please check & install it to initial database
      ```
      #> apt-get install libiao-dev
+     ```
+     - Point to mysql directory & run script to initial database system.
+     ```
+     #> cd /usr/local/mysql
+     #> scripts/mysql_install_db --user=mysql```
+     - Grant permission for MySQL
+     ```
+     #> chown -R root.
+     #> chown -R mysql data
+     #> chgrp -R mysql  ```
+     - Copy startup script to a directory, allow more permission execute, create trigger Initial when system start
+     ```
+     #> systemctl enabled /etc/init.d/mysql.server
      ```
   2. Data node
      - Go to downloaded file: extract it & copy ndbd, ndbmtd to /usr/local/bin
@@ -40,4 +53,3 @@ II. Install package on server node
       #> chmod +x /usr/local/bin/ndbd /usr/local/bin/ndbmtd
       ```
   3. Management node
-  
